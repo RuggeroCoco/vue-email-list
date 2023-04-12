@@ -15,9 +15,10 @@
   <body>
     <div id="app">
       <h1>Generated Email</h1>
-      <ul>
+      <ul v-if="emails.length === 10">
         <li v-for="email in emails">{{email}}</li>
       </ul>
+      <p v-else>Loading emails...</p>
     </div>
     <!-- JS -->
     <script src="js/script.js"></script>
